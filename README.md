@@ -6,7 +6,7 @@ URL: [p2.colinrudd.me](http://p2.colinrudd.me)
   
 Description: xkcd Password Generator that allows users to choose between
 4 and 9 randomly generated words with the options to add capitalization,
-a symbol, and/or a number to use as a password.
+a symbol and/or a number.
   
 Demo Info: 10/1/2014 in person  
   
