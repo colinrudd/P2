@@ -53,7 +53,7 @@ Author: Colin Rudd
 	passwords that are difficult to guess but easy to remember.</P>
 	<p>*For testing purposes only. Results may be insufficiently random.*</p>
 	<img class="pure-img" src="images/xkcd.png" alt="xkcd" title="xkcd" />
-	<p>For more information visit <a class="pure-button" href="http://xkcd.com/936/">xkcd.com</a>
+	<p>Comic courtesy of <a class="pure-button" href="http://xkcd.com/936/">xkcd.com</a>
 
 </body>
 
