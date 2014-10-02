@@ -15,3 +15,4 @@ Extra Details:
 * Google Web font Lato included.  
 * Pure CSS included.
 * Shout out to classmates for dropdown menu idea!
+* I have tried to make the site as mobile friendly as possible.

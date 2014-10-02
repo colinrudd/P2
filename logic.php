@@ -1,12 +1,15 @@
 <?php
 
+// logic.php
+// generates a random password
+
 // list of words
-$words = ['apple','angel','acorn','applications','baseball','brown','bat',
-'coffee','cat','car','cold','dog','dirt','dynamic','earth','funny','good',
-'hello','horse','house','hockey','iris','jump','kill','kilt','lotus','lord',
-'mouse','move','movie','orange','pie','purple','pumpkin','random','rock','rose',
-'star','stay','strong','table','tennis','turtle','under','web','water','wine',
-'yellow','zero','zebra'];
+$words = ['apple','angel','acorn','applications','baseball','battery','brown',
+'bat','coffee','cat','car','cold','correct','dog','dirt','dynamic','earth',
+'funny','good','hello','horse','house','hockey','iris','jump','kill','kilt',
+'lotus','lord','mouse','move','movie','orange','pie','purple','pumpkin',
+'random','rock','rose','star','staple','stay','strong','table','tennis',
+'turtle','under','web','water','wine','yellow','zero','zebra'];
 
 // list of symbols
 $symbols = ['!','@','#','%','&','*','?'];
@@ -38,11 +41,12 @@ if (isset($_POST['number'])) {
 	$number = false;
 }
 
-// array containing the generated words
+// array containing the generated password
 $selected_words = [];
 
 
 // generate password
+
 for ($i = 0; $i < $count; $i++) {
 	$rand = rand(0, count($words) -1 );
 	$word = $words[$rand];
@@ -50,9 +54,7 @@ for ($i = 0; $i < $count; $i++) {
 }
 
 if ($uppercase) {
-
 	foreach ($selected_words as $key => $value) {
-
 		$selected_words[$key] = ucfirst($value);
 	}
 }
@@ -68,5 +70,5 @@ if ($number) {
 	array_push($selected_words, $rand);
 }
 
-// return password to index.php
+// creates string to echo in index.php
 $password = implode(" ", $selected_words);
